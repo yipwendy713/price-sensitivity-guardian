@@ -1,0 +1,76 @@
+{
+  "email": "wendyyip+price@gmail.com",
+  "cartTotal": 9.95,
+  "items": [
+    {
+      "title": "Selling Plans Ski Wax",
+      "price": 9.95,
+      "quantity": 1,
+      "product_id": 10319863447751,
+      "variant_id": 50727190790343
+    }
+  ],
+  "startedAt": "2026-09-27T22:56:56.945Z",
+  "steps": [
+    {
+      "tool": "get_order_history",
+      "args": {
+        "email": "wendyyip+price@gmail.com"
+      },
+      "result": {
+        "order_count": 3,
+        "orders": [
+          {
+            "order": "#1004",
+            "date": "2026-09-25",
+            "total": 8.46,
+            "discount_codes": [
+              "save15"
+            ],
+            "items": [
+              "Selling Plans Ski Wax"
+            ]
+          },
+          {
+            "order": "#1002",
+            "date": "2026-09-25",
+            "total": 8.46,
+            "discount_codes": [
+              "save15"
+            ],
+            "items": [
+              "Selling Plans Ski Wax"
+            ]
+          },
+          {
+            "order": "#1001",
+            "date": "2026-09-25",
+            "total": 8.46,
+            "discount_codes": [
+              "save15"
+            ],
+            "items": [
+              "Selling Plans Ski Wax"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tool": "record_decision",
+      "args": {
+        "discount_percent": 15,
+        "email": "wendyyip+price@gmail.com",
+        "shopper_type": "price_sensitive",
+        "rationale": "3 of 3 past orders used SAVE15.",
+        "intervention": "discount"
+      },
+      "result": {
+        "recorded": true,
+        "discount_percent": 15,
+        "discount_capped": false
+      }
+    }
+  ],
+  "summary": "A discount of 15% has been offered to this price-sensitive shopper, as all their past orders used a 15% discount code."
+}
